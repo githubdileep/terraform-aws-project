@@ -55,7 +55,7 @@ module "s3_app" {
   source = "../../modules/storage/s3"
 
   environment   = var.environment
-  bucket_suffix = "app-data"
+  bucket_suffix = "app-data-9284"
 }
 
 module "dynamodb_app" {

@@ -10,12 +10,12 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
-  profile = "your-named-profile"
+  profile = "dileep-tf"
 }
 
 # S3 bucket to store Terraform state
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "your-unique-name-terraform-state-bucket" # must be globally unique
+  bucket = "dileep-tf-state-bucket-9284" # must be globally unique
 
   lifecycle {
     prevent_destroy = true

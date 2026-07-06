@@ -40,5 +40,5 @@ variable "instance_count" {
 variable "root_volume_size" {
   description = "Root EBS volume size in GB"
   type        = number
-  default     = 20
+  default     = 30
 }

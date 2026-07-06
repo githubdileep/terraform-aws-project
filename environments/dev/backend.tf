@@ -8,16 +8,16 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "your-unique-name-terraform-state-bucket"
+    bucket         = "dileep-tf-state-bucket-9284"
     key            = "dev/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-state-locks"
     encrypt        = true
-    profile        = "your-named-profile"
+    profile        = "dileep-tf"
   }
 }
 
 provider "aws" {
   region  = "us-east-1"
-  profile = "your-named-profile"
+  profile = "dileep-tf"
 }
