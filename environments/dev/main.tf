@@ -93,3 +93,5 @@ module "cicd" {
   ecr_repo_name         = "app"
   create_oidc_provider  = true  # dev owns the one-time OIDC provider creation
 }
+
+# test comment to trigger workflow
