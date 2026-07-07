@@ -55,7 +55,7 @@ resource "aws_iam_role_policy" "deploy_policy" {
         Action = [
           "ec2:*", "eks:*", "s3:*", "dynamodb:*",
           "lambda:*", "events:*", "elasticloadbalancing:*",
-          "iam:*", "ecr:*"
+          "iam:*", "ecr:*", "logs:*"
         ]
         Resource = "*"
       }
