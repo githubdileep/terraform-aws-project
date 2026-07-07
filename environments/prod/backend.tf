@@ -13,11 +13,9 @@ terraform {
     region         = "us-east-1"
     dynamodb_table = "terraform-state-locks"
     encrypt        = true
-    profile        = "dileep-tf"
   }
 }
 
 provider "aws" {
   region  = "us-east-1"
-  profile = "dileep-tf"
 }
